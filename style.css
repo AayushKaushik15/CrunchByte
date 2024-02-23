@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar-container h2 a{
+    font-weight: 400;
+    font-family: "Cascadia code";
+}
+
+
+.navbar-main-logo img{
+    width: 50px;
+    position: absolute;
+    top: -10px;
+    right: -58px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.navbar-container a {
+    color: #fff;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 5px 7%;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 100;
+}
+
+.navbar-container ul {
+    display: flex;
+}
+
+.navbar-container ul li a{
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.navbar-container ul li a:hover {
+    background-color: #fff;
+    color: #212121;
+    border-radius: 5px;
+}
+
+
+
+
+/* Body Component */
+
+.para-1 {
+    margin-block: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+.body-container {
+    margin-top: 20px;
+    padding: 0px 7%;
+    position: relative;
+}
+
+.input-section {
+    display: inline-block;
+    position: sticky;
+    top: 11px;
+    z-index: 1000;
+}
+
+form {
+    padding: 1px;
+    border-radius: 5px ;
+    border: 1px solid #222831;
+    background-color: #fff;
+
+}
+
+form input {
+    border: none;
+    outline: none;
+    width: 400px;
+    font-size: 1rem;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+form i {
+    /* background-color: #393E46; */
+    border-radius: 50px;
+    cursor: pointer;
+    color: #393E46;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.toggles {
+    display: flex;
+    position: sticky;
+    z-index: 100;
+    top: 64.5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.toggles p {
+    padding: 10px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #d6d6d6;
+    box-shadow: 1px 1px 10px rgb(217, 217, 217);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.toggle p:active {
+    background-color: red;
+}
+
+.fa-filter {
+    margin-left: 5px;
+    color: gray;
+}
+
+
+
+
+/* card container */
+
+
+
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250, 1fr));
+    padding-block: 30px;
+    gap: 10px;
+}
+
+.card-container {
+    margin: 10px;
+    transition: 0.1s ease;
+    position: relative;
+    color: #212121;
+}
+
+.card-container .nameTag, .rating {
+    font-weight: bolder;
+}
+
+.card-container:hover {
+    transform: scale(0.96);
+}
+
+.card-container img{
+    height: 230px;
+    width: 280px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}    
+
+.offer {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #222831;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.img-tag {
+    position: relative;
+}
+
+.fa-star {
+    background-color: green;
+    padding: 5px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.rating-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.rating {
+    margin-right: 5px;
+}
+
+.timing {
+    margin-left: 5px;
+}
+
+.cuisines {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+/* shimmer */
+
+.shimmer-ui {
+    position: relative;
+    top: 30;
+    display: flex;
+    width: 0 8%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0 7%;
+}
+
+
+
+/* footer-container */
+
+
+
+
+.footer-container{
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    background-color: #212121;
+}
+
+.list-footer-one {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.list-footer-one li{
+    margin: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    background-color: #393E46;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* error shimmer */
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-rotate-right {
+    font-size: 4rem;
+    color: red;
+}
+
+.error-page p {
+    font-size: 1.3rem;
+}
+
+
+
+
+/* Restaurant Menu */
+
+
+.restaurant-menu {
+    width: 750px;
+    margin: 20 auto;
+    min-height: 100vh;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mid-bar span, p{
+    margin-top: 5px;
+    font-size: 0.9rem;
+
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #393E46;
+    padding-bottom: 10px;
+}
+
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.last-div {
+    display: flex;
+    align-items: center;
+}
+
+.last-div p {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.last-div i {
+    margin-right: 10px;
+}
+
+
+
+/* recommendFilter */
+
+
+
+
+.recommendList {
+    margin-top: 20px;
+}
+
+.recommend-list {
+    padding: 10px 5px;
+    /* background-color: #cbcbcb; */
+    border-radius: 4px;
+    margin: 10px;
+    /* border: 2px solid #a1a0a0; */
+    box-shadow: 5px 5px 10px rgb(215, 215, 215);
+}
+
+.recommend-list h3 {
+    font-size: 1rem;
+    /* color: #fff; */
+}
+
+.recommend-list i {
+    /* color: #fff; */
+}
+
+.top-bar-list {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+
+.shimmer-two {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* listing container */
+
+.listing-container {
+    border-bottom: 1px dashed #fff;
+    padding: 20px 10px;
+    margin-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.listing-container h4{
+    font-weight: 500;
+    /* color: #fff; */
+}
+
+.nested-listing-two {
+    position: relative;
+}
+
+.nested-listing-two img{
+    width: 100px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.description {
+    max-width: 425px;
+    font-size: 0.7rem;
+}
+
+.nested-listing-one p {
+    margin-block: 10px;
+}
+
+
+.nested-listing-two button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #222831;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.cart-container {
+    padding: 10px 7%;
+}
+
+
+
+/* ABout page */
+
+
+
+.about-container {
+    padding: 30px 7%;
+}
+
+.about-nested h1 {
+    text-align: center;
+}
+
+.subHeading-2 {
+    margin-block: 10px;
+}
+
+.list-heading li {
+    margin: 10px 0;
+}
+
+
+.about-nested i {
+    background-color: #212121;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+
+
+
+/* cart-container */
+
+
+.message-empty {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Cart.css */
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-section {
+    width: 70%; /* Adjust the width as per your preference */
+  }
+  
+  .right-section {
+    /* width: 25%; Adjust the width as per your preference */
+    height: 500px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: fixed;
+    right: 150px;
+    top: 125px;
+  }
+  
+
+  .nested-cart {
+    background-color: #f5f5f5;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+
+
+
+  .emptyCart {
+    background-color: #393E46;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    /* font-size: 2rem; */
+    padding: 5px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+  }
+
+
+  .fa-trash {
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #212121;
+    color: #fff;
+  }
+
+  .fa-trash:active {
+    transform: scale(0.9);
+  }
