@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
         return <ShimmerRecommended/>
     }
 
-    const {areaName, avgRating, totalRatingsString, costForTwoMessage, cuisines, name, sla} = showData?.data?.cards[2]?.card?.card?.info;
+    const {areaName, avgRating, totalRatingsString, costForTwoMessage, cuisines, name, sla} = showData?.data?.cards[0]?.card?.card?.info;
 
     const recommendData = showData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
