@@ -19,6 +19,7 @@ const App = () => {
         </div>
     )
 }
+// react router dom provides routes to connect the pages...
 
 const appRouter = createBrowserRouter ([
     {
