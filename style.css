@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -154,7 +156,7 @@ form i {
 
 .card-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300, 1fr));
     padding-block: 30px;
     gap: 10px;
 }
